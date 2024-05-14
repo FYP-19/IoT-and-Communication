@@ -4,11 +4,12 @@ This project integrates hardware and software components to create a versatile i
 
 ## Getting Started 🏁
 ### Prerequisites
-Clone the repo: 
+
+1. Clone the repo: 
 ```
 https://github.com/FYP-19/IoT-and-Communication.git
 ```
-Go to directory and install necessary liberies including:
+2. Go to directory and install necessary liberies including:
 ```
 pip install RPi.GPIO
 ```
@@ -18,10 +19,11 @@ pip install Pillow
 ```
 pip install tflite_runtime
 ```
+3. Update files and paths
 * Update the model path in file ``Executor.py``.
 * Update the firestore database credential file path in ``DB_manager.py``.  
 
-## System Architecture Diagrams
+## System Architecture Diagrams 🔗
  Provide an overall architectural diagram illustrating how the various components of the system interact with each other.
 ### Highlevel Circuit Diagram
 <img src="https://github.com/FYP-19/IoT-and-Communication/assets/75986133/0cf3dbd6-0f46-4d1c-a4c5-7a6786b38c72" alt="Highlevel Circuit Diagram" width="500"/>
@@ -29,7 +31,7 @@ pip install tflite_runtime
 ### Implemented Circuit
 <img src="https://github.com/FYP-19/IoT-and-Communication/assets/75986133/a32e9edf-9b1a-4139-895f-cfadbcf9aee8" alt="Implemented Circuit" width="500"/>
 
-## Embedded Devices!
+## Embedded Devices 🔋
 
 | Requirement                | IoT Device                                |
 |-------------------------|----------------------------------------------|
@@ -39,7 +41,7 @@ pip install tflite_runtime
 | Communication Model        |  LoRa Ra-02 SX1278 |
 | Antenna        |  RF 433MHz Antenna 2-3 dBi   |
 
-## Useful Linux Commands 
+## Useful Linux Commands 📌
 
 | Function                | Linux Command                                |
 |-------------------------|----------------------------------------------|
