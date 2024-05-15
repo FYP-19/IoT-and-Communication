@@ -1,14 +1,15 @@
 # IoT and Communication Solution 📡🚀
 
-This project integrates hardware and software components to create a versatile image classification system. Upon activation, triggered by a microswitch, a camera module captures images and saves them to an SD card. A deep learning model deployed on a microcontroller retrieves these images, conducts classification, and transmits the results to a receiver via a transmitter. Once received, the classification results are updated in a Firebase cloud database. 
+This project integrates hardware and software components to create a versatile image classification system. Upon activation, triggered by a microswitch, a camera module captures images and saves them to an SD card. A deep learning model deployed on the microcontroller retrieves these images, conducts classification, and transmits the results to the receiver via a transmitter. Once received, the classification results are updated in a Firebase cloud database. 
 
 ## Getting Started 🏁
 ### Prerequisites
-Clone the repo: 
+
+1. Clone the repo: 
 ```
 https://github.com/FYP-19/IoT-and-Communication.git
 ```
-Go to directory and install necessary liberies including:
+2. Go to directory and install necessary liberies including:
 ```
 pip install RPi.GPIO
 ```
@@ -18,15 +19,19 @@ pip install Pillow
 ```
 pip install tflite_runtime
 ```
+3. Update files and paths
 * Update the model path in file ``Executor.py``.
 * Update the firestore database credential file path in ``DB_manager.py``.  
 
-## System Architecture Diagram
- Provide an overall architectural diagram illustrating how the various components of your system interact with each other.
- 
-<img src="https://github.com/FYP-19/IoT/assets/75986133/3cce3e50-2393-4969-a2b9-c611c6560571" alt="image (2)" width="500"/>
+## System Architecture Diagrams 🔗
+ Provide an overall architectural diagram illustrating how the various components of the system interact with each other.
+### Highlevel Circuit Diagram
+<img src="https://github.com/FYP-19/IoT-and-Communication/assets/75986133/0cf3dbd6-0f46-4d1c-a4c5-7a6786b38c72" alt="Highlevel Circuit Diagram" width="500"/>
 
-## Embedded Devices
+### Implemented Circuit
+<img src="https://github.com/FYP-19/IoT-and-Communication/assets/75986133/a32e9edf-9b1a-4139-895f-cfadbcf9aee8" alt="Implemented Circuit" width="500"/>
+
+## Embedded Devices 🔋
 
 | Requirement                | IoT Device                                |
 |-------------------------|----------------------------------------------|
@@ -36,7 +41,7 @@ pip install tflite_runtime
 | Communication Model        |  LoRa Ra-02 SX1278 |
 | Antenna        |  RF 433MHz Antenna 2-3 dBi   |
 
-## Useful Linux Commands 
+## Useful Linux Commands 📌
 
 | Function                | Linux Command                                |
 |-------------------------|----------------------------------------------|
