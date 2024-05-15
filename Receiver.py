@@ -62,7 +62,7 @@ class LoRaRcvCont(LoRa):
             print(f"Data Received Sucessfully! \n")
 
             #Upload data to firebase database
-            subprocess.run(["python","db_manager.py",str(cage_ID), str(Accuracy), str(predicted_label)])
+            subprocess.run(["python","DB_manager.py",str(cage_ID), str(Accuracy), str(predicted_label)])
         
         except Exception as e:
             print("Something went wrong!")

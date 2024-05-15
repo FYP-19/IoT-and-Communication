@@ -30,7 +30,9 @@ def capture_Images():
     image_directory = "/home/fyp/fyp-19/images/captured"
     
     print(f"Captured images saved on: {image_directory}")
-    for i in range (3):
+
+    num_of_images = 3
+    for i in range (num_of_images):
         image_filename = f"cap_image_{i}.jpg"
         image_pathname = f"{image_directory}/{image_filename}"
         subprocess.run(["raspistill", "-o", image_pathname])
@@ -54,7 +56,8 @@ def classify_Images():
     stored_classification_Results_map = {}
 
     # Load and preprocess the image
-    for i in range(3):
+    num_of_images_to_classify = 3
+    for i in range(num_of_images_to_classify):
         image_path = f"/home/fyp/fyp-19/images/captured_test/cap_image_{i}.jpeg"  # Update with your image path
         # image = Image.open(image_path).resize((input_details[0]['shape'][1], input_details[0]['shape'][2]))
         # input_data = np.expand_dims(image, axis=0)

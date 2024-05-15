@@ -11,8 +11,8 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Access the collection where you want to add the data
-collection_ref_before = db.collection('results')
-collection_ref_after = db.collection('trapStatus').document('0kuCvsdhGU45zwz2Lsas')
+collection_result = db.collection('results')
+collection_trapStatus = db.collection('trapStatus').document('0kuCvsdhGU45zwz2Lsas')
 
 cage_id = sys.argv[1]
 accuracy = sys.argv[2]
@@ -25,7 +25,6 @@ data1 = {
     'cageId': cage_id,
     'type':animal_type,
     'date': datetime.datetime.now()
-    # Add more fields as needed
 }
 
 data2 = {
@@ -34,8 +33,8 @@ data2 = {
 }
 
 try:
-    collection_ref_before.add(data1)
-    collection_ref_after.update(data2)
+    collection_result.add(data1)
+    collection_trapStatus.update(data2)
     print("Databse Sucessfully Updated!")
     print(f"============================================================== \n")
 except Exception as e:
