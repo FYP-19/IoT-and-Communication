@@ -10,6 +10,8 @@ This project integrates hardware and software components to create a versatile i
 https://github.com/FYP-19/IoT-and-Communication.git
 ```
 2. Go to directory and install necessary liberies including:
+
+For Transmitter 
 ```
 pip install RPi.GPIO
 ```
@@ -18,6 +20,13 @@ pip install Pillow
 ```
 ```
 pip install tflite_runtime
+```
+For Receiver
+```
+pip install RPi.GPIO
+```
+```
+pip install firebase-admin
 ```
 3. Update files and paths
 * Update the model path in file ``Executor.py``.
